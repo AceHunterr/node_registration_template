@@ -30,6 +30,9 @@ router.post(
 router.get("/register", (req, res) => {
   res.sendFile(path.join(__dirname, "register.html"));
 });
+router.get("/login", (req, res) => {
+  res.sendFile(path.join(__dirname, "login.html"));
+});
 
 // Shorter login form
 router.post(
